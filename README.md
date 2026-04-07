@@ -11,3 +11,4 @@ This is a functional visual application that is designed to interact with the bu
 ## Contributions
 
 # Copyright
+This project is copyrighted under the LGPL-2.1 license.
