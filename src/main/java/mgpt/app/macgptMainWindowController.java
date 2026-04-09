@@ -1,4 +1,4 @@
-package com.macgpt;
+package mgpt.app;
 
 import javafx.fxml.FXML;
 
