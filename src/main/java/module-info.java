@@ -1,7 +1,7 @@
-module com.macgpt {
+module mgpt.app {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens com.macgpt to javafx.fxml;
-    exports com.macgpt;
+    opens mgpt.app to javafx.fxml;
+    exports mgpt.app;
 }

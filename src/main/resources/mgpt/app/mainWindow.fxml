@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -13,36 +12,34 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mgpt.app.macgptMainWindowController">
    <children>
       <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
          <top>
             <MenuBar BorderPane.alignment="CENTER">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
                         <MenuItem fx:id="newChatMenuItem" mnemonicParsing="false" text="New Chat..." />
-                    <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
+                        <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
                   <Menu mnemonicParsing="false" text="View">
                      <items>
                         <MenuItem fx:id="modeSwitchMenuItem" mnemonicParsing="false" text="Dark Mode..." />
                      </items>
                   </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
          </top>
          <center>
@@ -120,7 +117,7 @@
                               <Insets right="1.5" />
                            </HBox.margin>
                         </Button>
-                        <Button fx:id="sendButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Send ">
+                        <Button fx:id="sendButton" mnemonicParsing="false" onAction="#handleSendMessage" prefHeight="30.0" prefWidth="70.0" text="Send ">
                            <HBox.margin>
                               <Insets left="1.5" />
                            </HBox.margin>
